@@ -2,7 +2,6 @@ title: zhaoqx # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
   Android<br/>
   Flutter<br/>
-  Sringboot<br/>
   <a href="mailto:oaierp@gmail.com">
     <i class="fas fa-envelope"></i>
   </a>
@@ -307,47 +306,6 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
             src='https://cdn.jsdelivr.net/npm/html-contents/html-contents.min.js'
             onload="htmlContents('#toc', {listType: 'o', filter: function(arr) {return !arr.matches('.masthead-title')}})"
           ></script>
-        - | # 运行时间，可将倒数第三行的时间改成你自己的建站时间，格式仿照上面的；不需要的话可以把这一项都删掉
-          <div>
-            <i class="fas fa-cog fa-spin fa-fw"></i>
-            <span id="run_time_day">
-              <i class="fas fa-spinner fa-pulse"></i>
-            </span>天
-            <span id="run_time_hour">
-              <i class="fas fa-spinner fa-pulse"></i>
-            </span>时
-            <span id="run_time_minute">
-              <i class="fas fa-spinner fa-pulse"></i>
-            </span>分
-            <span id="run_time_second">
-              <i class="fas fa-spinner fa-pulse"></i>
-            </span>秒
-            <script>
-              setInterval(function (BirthDay) {
-                function setzero(i) {
-                  if (i < 10) return "0" + i;
-                  return i;
-                }
-                BirthDay = new Date(BirthDay);
-                today = new Date();
-                timeold = (today.getTime() - BirthDay.getTime());
-                sectimeold = timeold / 1000;
-                secondsold = Math.floor(sectimeold);
-                msPerDay = 24 * 60 * 60 * 1000;
-                e_daysold = timeold / msPerDay;
-                daysold = Math.floor(e_daysold);
-                e_hrsold = (e_daysold - daysold) * 24;
-                hrsold = Math.floor(e_hrsold);
-                e_minsold = (e_hrsold - hrsold) * 60;
-                minsold = Math.floor((e_hrsold - hrsold) * 60);
-                seconds = Math.floor((e_minsold - minsold) * 60);
-                document.getElementById("run_time_day").innerHTML = daysold;
-                document.getElementById("run_time_hour").innerHTML = setzero(hrsold);
-                document.getElementById("run_time_minute").innerHTML = setzero(minsold);
-                document.getElementById("run_time_second").innerHTML = setzero(seconds);
-              }, 1000, "10/04/2020 11:03:56") // 这是我第一篇CSDN博客的时间
-            </script>
-          </div>
         - | # 不蒜子页面统计，看不懂可不改
           <div>
             <div>
