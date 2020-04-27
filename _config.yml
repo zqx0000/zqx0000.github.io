@@ -1,9 +1,8 @@
 title: zhaoqx # 站点标题
 description: | # 头像背后的信息（html格式），<br/>代表换行
-  SYSU超算17级在读<br/>
-  永远喜欢水野爱<br/>
-  田宫例四驱车<br/>
-  ASC<br/>
+  Android<br/>
+  Flutter<br/>
+  Sringboot<br/>
   <a href="mailto:oaierp@gmail.com">
     <i class="fas fa-envelope"></i>
   </a>
@@ -346,7 +345,7 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
                 document.getElementById("run_time_hour").innerHTML = setzero(hrsold);
                 document.getElementById("run_time_minute").innerHTML = setzero(minsold);
                 document.getElementById("run_time_second").innerHTML = setzero(seconds);
-              }, 1000, "27/04/2020 11:19:00") // 这是我第一篇CSDN博客的时间
+              }, 1000, "10/04/2020 11:03:56") // 这是我第一篇CSDN博客的时间
             </script>
           </div>
         - | # 不蒜子页面统计，看不懂可不改
